@@ -1,0 +1,17 @@
+{
+  "name": "api-proxy-starter-code",
+  "version": "1.0.0",
+  "description": "Starter code to serve static files, e.g., index.html placed in public folder and route requests to APIs defined in `server.js`.",
+  "scripts": {
+    "start": "node server/run.js"
+  },
+  "author": "Saimon Sharif",
+  "license": "MIT",
+  "repository": " ",
+  "dependencies": {
+    "compression": "^1.6.2",
+    "express": "^4.14.0",
+    "express-request-proxy": "^2.0.0",
+    "morgan": "^1.7.0"
+  }
+}
