@@ -4,45 +4,60 @@
   <meta charset="UTF-8">
   <title>DivertMe</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="js/vendors/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Poppins:400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 
 </head>
 <body>
   <div class="center-me" id="container">
     <section class="center-me" id="main-upper">
-      <div id="previous"></div>
       <div class="center-me" id="content">
+        <div class="logo"><h1>Divert<span>Me</span></h1></div>
+        <div id="info">
+          <p><span>Click</span> the <span>box</span> down below to get started.</p>
+          <p>Then <span>drag</span> one of the colored <span>circles</span> into the <span>box</span> to navigate through the app.</p>
+          <p><span>Click</span> it... You know you want to!</p>
+        </div>
 
+        <i class="fa fa-arrow-circle-o-down fa-3x" aria-hidden="true"></i>
       </div>
-      <div id="next"></div>
     </section>
     <section class="center-me" id="main-lower">
-      <div class="center-me" id="logo">
-        <h1>Divert<span>Me</span></h1>
+      <div class="center-me lower-left">
+        <div class="logo"><h1>Divert<span>Me</span></h1></div>
       </div>
 
-      <div class="center-me" id="menu-outter">
-        <div class="center-me" id="menu">
-          <div class="nav center-me" id="nav-up"></div>
-          <div class="nav center-me" id="nav-right"></div>
-          <div class="nav center-me" id="nav-down"></div>
-          <div class="nav center-me" id="nav-left"></div>
-          <div id="menu-inner"></div>
+      <div class="center-me lower-mid">
+        <div class="center-me" id="menu-outter">
+          <div class="center-me" id="menu">
+            <div class="nav center-me" id="nav-up" data-cat="GifMe"></div>
+            <div class="nav center-me" id="nav-right" data-cat="ImageMe"></div>
+            <div class="nav center-me" id="nav-down" data-cat="Unavailable"></div>
+            <div class="nav center-me" id="nav-left" data-cat="InspireMe"></div>
+            <div id="menu-inner"></div>
+          </div>
         </div>
       </div>
 
-      <div class="center-me" id="legend">
-        <div id="search">
-          <input type="text" name="search" placeholder="SearchMe">
+      <div class="center-me lower-right">
+        <div class="center-me" id="search">
+          <div id="search-title">
+            <p>Search <span></span></p>
+          </div>
+          <input type="text" name="search">
+          <button><i class="fa fa-search" aria-hidden="true"></i></button>
         </div>
+        <hr>
         <div class="center-me" id='legend-main'>
-          <div id='legend-title'><h4>Legend</h4></div>
+          <div id="legend-title">
+            <p>Legend</p>
+          </div>
           <ul class='labels center-me'>
-            <li id="red"><span></span><p>One</p></li>
-            <li id="green"><span></span><p>Two</p></li>
-            <li id="blue"><span></span><p>Three</p></li>
-            <li id="yellow"><span></span><p>Four</p></li>
+            <li id="red"><span></span><p>-</p></li>
+            <li id="green"><span></span><p>-</p></li>
+            <li id="blue"><span></span><p>-</p></li>
+            <li id="yellow"><span></span><p>-</p></li>
           </ul>
         </div>
       </div>
@@ -50,7 +65,8 @@
   </div>
   <script src="js/vendors/jquery-3.0.0.min.js"></script>
   <script src="js/vendors/underscore-min.js"></script>
-  <script src="js/vendors/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://use.fontawesome.com/ac686d1c55.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
