@@ -26,12 +26,26 @@ app.use(express.static('public'));
 
 // BASIC FORMAT:
 // `/api/*` is the url we want to call from the client, e.g. `app.js`, for the API. Make sure you keep the `*` is kept.
-// app.all('/api/*', requestProxy({
-//   url: 'http://API_URL/*', // must keep `*`
-//   query: {
-//     // `apiKey` should correspond to the name of the query param the API expects
-//     apikey: 'process.env.API_KEY_NAME'
-//   }
-// }));
+app.all('/api/*', requestProxy({
+  url: 'http://api.giphy.com/v1/gifs/*', // must keep `*`
+  query: {
+    // `apiKey` should correspond to the name of the query param the API expects
+    apikey: 'process.env.GIPHY_API_KEY'
+  }
+}));
+app.all('/api/*', requestProxy({
+  url: 'https://pixabay.com/api/*', // must keep `*`
+  query: {
+    // `apiKey` should correspond to the name of the query param the API expects
+    apikey: 'process.env.PIXABAY_API_KEY'
+  }
+}));
+app.all('/api/*', requestProxy({
+  url: 'https://andruxnet-random-famous-quotes.p.mashape.com/*', // must keep `*`
+  query: {
+    // `apiKey` should correspond to the name of the query param the API expects
+    apikey: 'process.env.RANDOMFAMOUSQUOTES_API_KEY'
+  }
+}));
 
 module.exports = app;
