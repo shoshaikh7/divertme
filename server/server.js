@@ -27,7 +27,7 @@ app.use(express.static('public'));
 // BASIC FORMAT:
 // `/api/*` is the url we want to call from the client, e.g. `app.js`, for the API. Make sure you keep the `*` is kept.
 app.all('/api/*', requestProxy({
-  url: 'http://api.giphy.com/v1/gifs/*', // must keep `*`
+  url: 'https://api.giphy.com/v1/gifs/*', // must keep `*`
   query: {
     // `apiKey` should correspond to the name of the query param the API expects
     apikey: 'process.env.GIPHY_API_KEY'

@@ -3,7 +3,7 @@ $(document).ready(function () {
     {
       sourceName: 'Giphy',
       sourceAlias: 'GifMe',
-      hostURL: 'http://api.giphy.com/v1/gifs/',
+      hostURL: 'https://api.giphy.com/v1/gifs/',
       api_key: 'dc6zaTOxFJmzC',
       endpoint:  '',
       active: false,
